@@ -263,7 +263,7 @@ import UIKit
     fileprivate var width: CGFloat { return bounds.width }
     fileprivate var height: CGFloat { return bounds.height }
     fileprivate var titleLabelsCount: Int { return titleLabelsView.subviews.count }
-    fileprivate var titleLabels: [UILabel] { return titleLabelsView.subviews as! [UILabel] }
+    public var titleLabels: [UILabel] { return titleLabelsView.subviews as! [UILabel] }
     fileprivate var selectedTitleLabels: [UILabel] { return selectedTitleLabelsView.subviews as! [UILabel] }
     fileprivate var totalInsetSize: CGFloat { return indicatorViewInset * 2.0 }
     fileprivate lazy var defaultTitles: [String] = { return ["First", "Second"] }()
